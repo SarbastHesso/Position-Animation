@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    animation: body-bg 30s ease-in-out infinite;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    position: relative;
+    margin:300px auto 100px;
+    animation: spin 30s ease-in-out infinite;
+}
+
+@keyframes body-bg {
+    0% {background-color:#000000;}
+    25% {background-color:#aeaeae;}
+    50% {background-color: #ffffff;}
+    75% {background-color: #aeaeae;}
+    100% {background-color: #000000;}
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(360deg);}
+    100% {transform: rotate(-360deg);}
+}
+
+@keyframes black-1 {
+    0% {transform: rotate(0deg); background-color:#000000; color: #ffffff;}
+    50% {transform: rotate(20deg); background-color: #aeaeae; color: #000000;}
+    100% {transform: rotate(-20deg); background-color: #000000; color: #ffffff;}
+}
+@keyframes grey-1 {
+    0% {transform: rotate(0deg); background-color: #aeaeae; color: #000000;}
+    50% {transform: rotate(20deg); background-color: #000000; color: #ffffff;}
+    100% {transform: rotate(-20deg); background-color: #aeaeae; color: #000000;}
+}
+
+@keyframes grey-2 {
+    0% {transform: rotate(0deg); background-color: #aeaeae; color: #000000;}
+    50% {transform: rotate(-20deg); background-color: #000000; color: #ffffff;}
+    100% {transform: rotate(20deg); background-color: #aeaeae; color: #000000;}
+}
+
+.section-1 {
+    height: 70px;
+    width: 150px;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid #ffffff;
+    animation: black-1 30s ease-in-out infinite;
+}
+
+.section-2 {
+    height: 150px;
+    width: 70px;
+    background-color: #aeaeae;
+    position: absolute;
+    top: 70px;
+    right: 35px;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid #ffffff;
+    animation: grey-1 30s ease-in-out infinite;
+}
+.section-3 {
+    height: 150px;
+    width: 70px;
+    background-color: #aeaeae;
+    position: absolute;
+    top: 0;
+    right: 185px;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid #ffffff;
+    animation: grey-1 30s ease-in-out infinite;
+}
+.section-4 {
+    height: 70px;
+    width: 150px;
+    background-color: #000000;
+    position: absolute;
+    top: 150px;
+    right: 105px;
+    font-size: 1rem;
+    border: 1px solid #ffffff;
+    text-align: center;
+    animation: black-1 30s ease-in-out infinite;
+}
