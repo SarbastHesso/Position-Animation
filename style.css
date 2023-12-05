@@ -16,7 +16,7 @@ main {
     align-items: center;
     width: 220px;
     position: relative;
-    margin:300px auto 100px;
+    margin:100px auto 100px;
     animation: spin 30s ease-in-out infinite;
 }
 
@@ -97,7 +97,7 @@ main {
     font-size: 1rem;
     border: 1px solid #ffffff;
     text-align: center;
-    animation: black-1 30s ease-in-out infinite;
+    animation: black-1 30s linear infinite;
 }
 
 
@@ -119,7 +119,7 @@ main {
     position: absolute;
     top: -15px;
     right: 50%;
-    animation: ball-1 30s ease-in-out infinite;
+    animation: ball-1 30s linear infinite;
 }
 .parent-ball-2 {
     height: 25px;
@@ -129,7 +129,7 @@ main {
     position: absolute;
     bottom: -15px;
     right: 45%;
-    animation: ball-2 30s ease-in-out infinite;
+    animation: ball-2 30s linear infinite;
 }
 
 .child-circle {
@@ -163,4 +163,20 @@ main {
     50% {background-color: #000000;}
     75% {background-color: red;}
     100% {background-color: #aeaeae;}
+}
+
+
+h1 {
+    margin: 100px;
+    margin-left: 300px;
+    font-size: 3rem;
+    color: red;
+    text-shadow: 3px 3px 5px red;
+    animation: title 30s ease-out infinite;
+}
+
+@keyframes title {
+    0% {scale: 1;}
+    100% {scale: 1.5;}
+    0% {scale: 1;}
 }
